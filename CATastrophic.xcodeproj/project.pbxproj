@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,6 +26,10 @@
 		DC2B470323883131002D43F6 /* Cat+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2B46FB23883131002D43F6 /* Cat+CoreDataProperties.swift */; };
 		DC2B470423883131002D43F6 /* Breed+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2B46FC23883131002D43F6 /* Breed+CoreDataClass.swift */; };
 		DC2B470523883131002D43F6 /* Breed+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2B46FD23883131002D43F6 /* Breed+CoreDataProperties.swift */; };
+		DC2B4707238969AE002D43F6 /* CatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2B4706238969AE002D43F6 /* CatCollectionViewCell.swift */; };
+		DC2B470A23896DC7002D43F6 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = DC2B470923896DC7002D43F6 /* SDWebImage */; };
+		DC2B470C2389A117002D43F6 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2B470B2389A117002D43F6 /* UIViewController.swift */; };
+		DC2B470E2389A174002D43F6 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2B470D2389A174002D43F6 /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,9 @@
 		DC2B46FB23883131002D43F6 /* Cat+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cat+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		DC2B46FC23883131002D43F6 /* Breed+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Breed+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		DC2B46FD23883131002D43F6 /* Breed+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Breed+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		DC2B4706238969AE002D43F6 /* CatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatCollectionViewCell.swift; sourceTree = "<group>"; };
+		DC2B470B2389A117002D43F6 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		DC2B470D2389A174002D43F6 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC2B470A23896DC7002D43F6 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +103,9 @@
 				DC0459D32386E0CF007A6E5A /* CoreDataStack.swift */,
 				DC0459D52386E116007A6E5A /* ApiRepository.swift */,
 				DC0459D72386E2C2007A6E5A /* DataProvider.swift */,
+				DC2B4706238969AE002D43F6 /* CatCollectionViewCell.swift */,
+				DC2B470B2389A117002D43F6 /* UIViewController.swift */,
+				DC2B470D2389A174002D43F6 /* UIView.swift */,
 			);
 			path = CATastrophic;
 			sourceTree = "<group>";
@@ -130,6 +141,9 @@
 			dependencies = (
 			);
 			name = CATastrophic;
+			packageProductDependencies = (
+				DC2B470923896DC7002D43F6 /* SDWebImage */,
+			);
 			productName = CATastrophic;
 			productReference = DC0459AF2386D035007A6E5A /* CATastrophic.app */;
 			productType = "com.apple.product-type.application";
@@ -158,6 +172,9 @@
 				Base,
 			);
 			mainGroup = DC0459A62386D035007A6E5A;
+			packageReferences = (
+				DC2B470823896DC7002D43F6 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = DC0459B02386D035007A6E5A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -187,6 +204,8 @@
 			files = (
 				DC2B46FE23883131002D43F6 /* Weight+CoreDataClass.swift in Sources */,
 				DC0459C82386D086007A6E5A /* CatDB.xcdatamodeld in Sources */,
+				DC2B470C2389A117002D43F6 /* UIViewController.swift in Sources */,
+				DC2B4707238969AE002D43F6 /* CatCollectionViewCell.swift in Sources */,
 				DC2B470323883131002D43F6 /* Cat+CoreDataProperties.swift in Sources */,
 				DC2B470023883131002D43F6 /* Category+CoreDataClass.swift in Sources */,
 				DC0459D82386E2C2007A6E5A /* DataProvider.swift in Sources */,
@@ -196,6 +215,7 @@
 				DC0459D22386D72D007A6E5A /* CatDecodeModel.swift in Sources */,
 				DC2B470123883131002D43F6 /* Category+CoreDataProperties.swift in Sources */,
 				DC2B470423883131002D43F6 /* Breed+CoreDataClass.swift in Sources */,
+				DC2B470E2389A174002D43F6 /* UIView.swift in Sources */,
 				DC0459B52386D035007A6E5A /* SceneDelegate.swift in Sources */,
 				DC2B470223883131002D43F6 /* Cat+CoreDataClass.swift in Sources */,
 				DC2B46FF23883131002D43F6 /* Weight+CoreDataProperties.swift in Sources */,
@@ -396,6 +416,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DC2B470823896DC7002D43F6 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DC2B470923896DC7002D43F6 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC2B470823896DC7002D43F6 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		DC0459C62386D086007A6E5A /* CatDB.xcdatamodeld */ = {
