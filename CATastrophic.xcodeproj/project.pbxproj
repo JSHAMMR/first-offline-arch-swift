@@ -30,6 +30,7 @@
 		DC2B470A23896DC7002D43F6 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = DC2B470923896DC7002D43F6 /* SDWebImage */; };
 		DC2B470C2389A117002D43F6 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2B470B2389A117002D43F6 /* UIViewController.swift */; };
 		DC2B470E2389A174002D43F6 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2B470D2389A174002D43F6 /* UIView.swift */; };
+		DCC90712238A868200855E73 /* CollectionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC90711238A868200855E73 /* CollectionProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		DC2B4706238969AE002D43F6 /* CatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatCollectionViewCell.swift; sourceTree = "<group>"; };
 		DC2B470B2389A117002D43F6 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		DC2B470D2389A174002D43F6 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		DCC90711238A868200855E73 /* CollectionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				DC2B4706238969AE002D43F6 /* CatCollectionViewCell.swift */,
 				DC2B470B2389A117002D43F6 /* UIViewController.swift */,
 				DC2B470D2389A174002D43F6 /* UIView.swift */,
+				DCC90711238A868200855E73 /* CollectionProvider.swift */,
 			);
 			path = CATastrophic;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 			files = (
 				DC2B46FE23883131002D43F6 /* Weight+CoreDataClass.swift in Sources */,
 				DC0459C82386D086007A6E5A /* CatDB.xcdatamodeld in Sources */,
+				DCC90712238A868200855E73 /* CollectionProvider.swift in Sources */,
 				DC2B470C2389A117002D43F6 /* UIViewController.swift in Sources */,
 				DC2B4707238969AE002D43F6 /* CatCollectionViewCell.swift in Sources */,
 				DC2B470323883131002D43F6 /* Cat+CoreDataProperties.swift in Sources */,

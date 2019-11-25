@@ -33,10 +33,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="150" height="145"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat_paw" translatesAutoresizingMaskIntoConstraints="NO" id="Yzs-De-nvr">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zIm-SA-QpB">
                                                     <rect key="frame" x="0.0" y="0.0" width="150" height="145"/>
                                                 </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zIm-SA-QpB">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat_paw" translatesAutoresizingMaskIntoConstraints="NO" id="Yzs-De-nvr">
                                                     <rect key="frame" x="0.0" y="0.0" width="150" height="145"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQ0-eL-dGc">
@@ -78,10 +78,6 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="8F5-TX-fpj"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="6eN-H2-o9I"/>
-                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -95,10 +91,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="PB7-3U-t5f"/>
                     <connections>
+                        <outlet property="collectionProvider" destination="fVi-jZ-dJU" id="fHo-jf-zDM"/>
                         <outlet property="collectionView" destination="5yM-EP-mGx" id="MIU-5u-2U6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="fVi-jZ-dJU" customClass="CollectionProvider" customModule="CATastrophic" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="60.9375"/>
         </scene>
