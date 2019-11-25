@@ -1,4 +1,4 @@
-# first-offline-arch-swift
+# offline-first-arch-swift
 
 
-Using first offline architecture integrated with MVVM for saving online data 
+Using  offline first architecture integrated with MVVM for saving online data 
